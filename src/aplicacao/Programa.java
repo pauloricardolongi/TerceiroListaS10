@@ -1,7 +1,9 @@
 package aplicacao;
 
 import java.util.ArrayList;
+
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Programa {
 
@@ -27,7 +29,15 @@ public class Programa {
 	}
 		System.out.println("-------------------------------");
 		System.out.println("Index of Bob: " + list.indexOf("Bob"));//encontrar a posição de um elemento
-		System.out.println("Index of Bob: " + list.indexOf("Paulo"));//encontrar elemento que não existe na lista 
+		System.out.println("Index of Paulo: " + list.indexOf("Paulo"));//encontrar elemento que não existe na lista 
+		
+		System.out.println("-------------------------------");
+		List<String> resultado = list.stream().
+				filter(x -> x.charAt(0)== 'A').collect(Collectors.toList());
+		for (String x : resultado) {
+			System.out.println(x);
+		//filtar a lista e deixar só  nomes que começa com A"
 
 }
+	}
 }
