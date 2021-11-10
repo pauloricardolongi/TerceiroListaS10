@@ -25,6 +25,9 @@ public class Programa {
 		for (String x : list) {
 			System.out.println(x);
 	}
+		System.out.println("-------------------------------");
+		System.out.println("Index of Bob: " + list.indexOf("Bob"));//encontrar a posição de um elemento
+		System.out.println("Index of Bob: " + list.indexOf("Paulo"));//encontrar elemento que não existe na lista 
 
 }
 }
