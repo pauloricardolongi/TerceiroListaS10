@@ -12,9 +12,11 @@ public class Programa {
 		list.add("Alex");
 		list.add("Bob");
 		list.add("Anna");
-		list.add(2, "Marco");//ver tamanho da lista
+		list.add(2, "Marco");
 		
 		System.out.println(list.size());
+		
+		list.remove("Anna");//remover da lista
 		for (String x : list) {
 			System.out.println(x);
 		}
