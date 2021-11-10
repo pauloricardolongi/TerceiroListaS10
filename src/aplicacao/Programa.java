@@ -36,8 +36,13 @@ public class Programa {
 				filter(x -> x.charAt(0)== 'A').collect(Collectors.toList());
 		for (String x : resultado) {
 			System.out.println(x);
-		//filtar a lista e deixar só  nomes que começa com A"
+		//encontrar o primeiro elemento que começa com a letra A"
 
 }
+		System.out.println("-------------------------------");	
+		//encontrar o primeiro elemento da lista que começa com a letra A"
+		String nome = list.stream().filter(x -> x.charAt(0)== 'A')
+				.findFirst().orElse(null);
+		System.out.println(nome);
 	}
 }
