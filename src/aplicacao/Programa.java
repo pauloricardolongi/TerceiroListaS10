@@ -12,9 +12,10 @@ public class Programa {
 		list.add("Alex");
 		list.add("Bob");
 		list.add("Anna");
+		list.add(2, "Marco");//posição 2 da lista inseri o Marco
 		
-		for (String x : list) {
-			System.out.println(x);
+		for (String c : list) {
+			System.out.println(c);
 		}
 	}
 
