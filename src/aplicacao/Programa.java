@@ -14,12 +14,17 @@ public class Programa {
 		list.add("Anna");
 		list.add(2, "Marco");
 		
-		System.out.println(list.size());
-		
-		list.remove(1);//remover da lista por posição
+		System.out.println(list.size());		
+	
 		for (String x : list) {
 			System.out.println(x);
 		}
+		System.out.println("-------------------------------");
+		list.removeIf(x -> x.charAt(0)== 'M');//remover por predicado- inicio da letra do nome
+
+		for (String x : list) {
+			System.out.println(x);
 	}
 
+}
 }
