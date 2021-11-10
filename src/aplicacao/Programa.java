@@ -16,7 +16,7 @@ public class Programa {
 		
 		System.out.println(list.size());
 		
-		list.remove("Anna");//remover da lista
+		list.remove(1);//remover da lista por posição
 		for (String x : list) {
 			System.out.println(x);
 		}
